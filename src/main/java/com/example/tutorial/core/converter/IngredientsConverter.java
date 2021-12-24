@@ -1,16 +1,15 @@
 package com.example.tutorial.core.converter;
 
 import com.example.tutorial.domains.Ingredient;
+import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 
-import org.springframework.core.convert.converter.Converter;
-import java.lang.annotation.Annotation;
 import java.util.HashMap;
 import java.util.Map;
 
 @Component
 public class IngredientsConverter implements Converter<String, Ingredient> {
-    private Map<String, Ingredient> ingredientMap = new HashMap<>();
+    private final Map<String, Ingredient> ingredientMap = new HashMap<>();
     public IngredientsConverter() {
         ingredientMap.put("FLTO",
                 new Ingredient("FLTO", "Flour Tortilla", Ingredient.Type.WRAP));
