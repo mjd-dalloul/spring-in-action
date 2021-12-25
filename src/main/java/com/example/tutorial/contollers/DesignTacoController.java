@@ -5,8 +5,10 @@ import com.example.tutorial.domains.Taco;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -43,7 +45,10 @@ public class DesignTacoController {
         return "design";
     }
     @PostMapping
-    public String processTaco(Taco taco) {
+    public String processTaco(@Valid Taco taco, Errors errors) {
+        if(errors.hasErrors()) {
+            return "design";
+        }
         log.info("Processing taco: " + taco);
         return "redirect:/orders/current";
     }
