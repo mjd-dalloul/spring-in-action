@@ -23,7 +23,7 @@ public class TacoOrder {
     private String deliveryZip;
     @CreditCardNumber(message = "Not valid credit card number")
     private String ccNumber;
-    @Pattern(regexp="^(0[1-9]|1[0-2])([\\/])([1-9][0-9])$",
+    @Pattern(regexp="^(0[1-9]|1[0-2])([/])([1-9][0-9])$",
             message = "must be formatted MM/YY")
     private String ccExpiration;
     @Digits(integer = 3, fraction = 0, message = "invalid CC number")
