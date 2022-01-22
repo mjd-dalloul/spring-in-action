@@ -2,7 +2,7 @@ package com.example.tutorial.contollers;
 
 import com.example.tutorial.domains.Ingredient;
 import com.example.tutorial.domains.Taco;
-import com.example.tutorial.repository.ingredient_repository.IngredientRepository;
+import com.example.tutorial.domains.IngredientRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

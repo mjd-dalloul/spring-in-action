@@ -1,6 +1,7 @@
 package com.example.tutorial.repository.ingredient_repository;
 
 import com.example.tutorial.domains.Ingredient;
+import com.example.tutorial.domains.IngredientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;

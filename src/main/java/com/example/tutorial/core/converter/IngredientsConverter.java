@@ -1,7 +1,7 @@
 package com.example.tutorial.core.converter;
 
 import com.example.tutorial.domains.Ingredient;
-import com.example.tutorial.repository.ingredient_repository.IngredientRepository;
+import com.example.tutorial.domains.IngredientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;

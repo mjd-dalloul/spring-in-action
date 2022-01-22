@@ -9,6 +9,7 @@ import java.util.List;
 
 @Data
 public class Taco {
+    private Long id;
     @NotNull
     @Size(min = 5, message = "Name length must be at least 5 characters")
     private String name;

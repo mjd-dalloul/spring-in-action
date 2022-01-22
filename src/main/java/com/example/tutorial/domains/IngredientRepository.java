@@ -1,6 +1,4 @@
-package com.example.tutorial.repository.ingredient_repository;
-
-import com.example.tutorial.domains.Ingredient;
+package com.example.tutorial.domains;
 
 import java.util.List;
 import java.util.Optional;
