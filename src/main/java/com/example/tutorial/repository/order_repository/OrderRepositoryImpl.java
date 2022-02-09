@@ -6,6 +6,7 @@ import org.springframework.jdbc.core.JdbcOperations;
 import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.core.PreparedStatementCreatorFactory;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.Types;
@@ -14,6 +15,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
+@Repository
 public class OrderRepositoryImpl implements OrderRepository {
 
     private final JdbcOperations jdbcOperations;
